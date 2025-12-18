@@ -1,0 +1,7 @@
+*.idea
+*.venv
+client/node_modules
+*node_modules
+client/package-lock.json
+server/app.py
+server/static
