@@ -1,0 +1,45 @@
+D:\Soft\php-8.4.14-nts-Win32-vs17-x64\php.exe D:\Project\php\HSE\OOP\index.php
+=== STARTING SHOP DEMO ===
+[2025-12-20 14:16:53] LOG: Created product: iPhone 15
+[2025-12-20 14:16:53] LOG: Created product: PHP OOP Guide
+
+--- Product Info (Inheritance & Polymorphism) ---
+Physical Item: iPhone 15, Weight: 0.5kg | Delivery: $5
+Digital Download: PHP OOP Guide, Size: 15MB | Delivery: $0
+
+--- Magic Methods (__toString) ---
+String representation: iPhone 15 (Price: 999.00 USD)
+
+--- Magic Methods (__debugInfo) ---
+object(App\Models\PhysicalProduct)#2 (3) {
+  ["name"]=>
+  string(9) "iPhone 15"
+  ["price_formatted"]=>
+  string(7) "999 USD"
+  ["info"]=>
+  string(51) "This is a secure debug view (internal cache hidden)"
+}
+
+--- Cloning ---
+[2025-12-20 14:16:53] LOG: Object cloned. New name: Copy of iPhone 15
+Original: iPhone 15
+Clone: Copy of iPhone 15
+
+--- Serialization ---
+Serialized: O:25:"App\Models\DigitalProduct":3:{s:7:" * name";s:13:"PHP OOP Guide";s:8:" * price";d:29.99;s:11:" * currency";s:3:"USD";}
+[2025-12-20 14:16:53] LOG: Object woke up from serialization: PHP OOP Guide
+Unserialized Name: PHP OOP Guide
+
+--- Anonymous Class Check ---
+Coupon 'SALE2024' valid? Yes
+
+--- Shopping Cart ---
+Total Cart Price: $1028.99
+
+=== END OF DEMO ===
+[2025-12-20 14:16:53] LOG: Destructor called for: PHP OOP Guide
+[2025-12-20 14:16:53] LOG: Destructor called for: Copy of iPhone 15
+[2025-12-20 14:16:53] LOG: Destructor called for: PHP OOP Guide
+[2025-12-20 14:16:53] LOG: Destructor called for: iPhone 15
+
+Process finished with exit code 0
